@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT master    (parcours+,intervenant+,unite+)>
+<!ENTITY lum "Campus de luminy" >
+<!ENTITY jer "Campus de Saint-jerome" >
+<!ENTITY % riches "(#PCDATA | par | list | tab)*" >
+<!ELEMENT tab (tr*)>
+<!ELEMENT tr (th*) >
+<!ELEMENT th (#PCDATA) >
+<!ELEMENT list (li+)>
+<!ELEMENT li (par*)>
+<!ELEMENT par (#PCDATA | bold | i | a)*>
+<!ELEMENT bold (#PCDATA)>
+<!ELEMENT i (#PCDATA)>
+<!ELEMENT a (#PCDATA)>
+<!ELEMENT unite    (nom,credit,resume,plan,lieu,ref_intervenant)>
+<!ATTLIST unite
+    id ID #REQUIRED>
+<!ELEMENT nom      (#PCDATA)>
+
+<!ELEMENT id     (#PCDATA)>
+<!ELEMENT credit     (#PCDATA)>
+<!ELEMENT resume     %riches;>
+<!ELEMENT plan     (#PCDATA)>
+<!ELEMENT lieu     (#PCDATA)>
+<!ELEMENT ref_intervenant     (#PCDATA)>
+<!ATTLIST ref_intervenant
+     ref IDREF #IMPLIED>
+<!ELEMENT intervenant    (nom,web,mail)>
+<!ATTLIST intervenant
+     id ID #REQUIRED>
+
+<!ELEMENT web     (#PCDATA)>
+<!ELEMENT mail     (#PCDATA)>
+<!ELEMENT parcours     (responsable+,nom,description,débouchés+,semestre+)>
+<!ATTLIST parcours id ID #IMPLIED >
+<!ELEMENT responsable     (#PCDATA)>
+<!ELEMENT description     %riches;>
+<!ELEMENT débouchés %riches;>
+<!ELEMENT semestre     (role+)>
+<!ATTLIST semestre numero (S1 | S2 | S3 | S4) "S1" >
+<!ELEMENT role     (ref_unite+)>
+<!ATTLIST role type (obligatoires|options) "obligatoires">
+<!ELEMENT ref_unite     (#PCDATA)>
+<!ATTLIST ref_unite
+     ref IDREF #REQUIRED>
