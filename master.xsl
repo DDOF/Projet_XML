@@ -3,10 +3,73 @@
     version="1.0">
 	<xsl:output method="html" encoding="iso-8859-1" indent="yes" doctype-system="master.dtd"/>
 <xsl:template match="/">
-    <html><body>
-       <xsl:call-template name="liste-des-unites" />
-       <xsl:call-template name="liste-des-intervenants" />
+    <html>
+        <head><title>Index</title></head>
+    <body>
+
     </body></html>
+     <xsl:for-each select="//parcours">
+
+        <xsl:document href="parcours/{nom}.html">
+    <h2><xsl:value-of select="nom" /></h2>
+<xsl:value-of select="description" />
+<xsl:value-of select="débouchés" />
+ <xsl:for-each select="semestre">
+<xsl:value-of select="@numero" />
+<xsl:for-each select="role">
+<xsl:value-of select="@type"/>
+    <xsl:for-each select="ref_unite">
+    
+      <li><a><xsl:attribute name="href">../unites/<xsl:value-of select="@ref" />.html
+      </xsl:attribute>
+<xsl:value-of select="text()"/>         
+</a></li>
+     </xsl:for-each>
+     </xsl:for-each>
+     </xsl:for-each>
+    </xsl:document>
+     </xsl:for-each>
+
+    <xsl:for-each select="//intervenant">
+
+        <xsl:document href="int/{nom}.html">
+      <div><xsl:attribute name="id"><xsl:value-of select="@id" />
+      </xsl:attribute>
+        <h2><xsl:value-of select="nom" /> </h2></div>
+     <xsl:value-of select="mail" />
+    </xsl:document>
+     </xsl:for-each>
+
+    <xsl:for-each select="//unite">
+
+        <xsl:document href="unites/{@id}.html">
+           <div><xsl:attribute name="id"><xsl:value-of select="@id" />
+      </xsl:attribute>
+        <h2><xsl:value-of select="nom" /></h2></div>
+     <xsl:value-of select="credit" />
+      <xsl:value-of select="string(resume)" />
+      <a><xsl:attribute name="href">intervenants.html#<xsl:value-of select="ref_intervenant/@ref" />
+      </xsl:attribute>
+        <xsl:value-of select="ref_intervenant/@ref" /> </a>
+    </xsl:document>
+     </xsl:for-each>
+
+      <xsl:document href="intervenants.html">
+        <html>
+          <head><title>Intervenants</title></head>
+          <body>
+              <xsl:call-template name="liste-des-intervenants" />
+          </body>
+        </html>
+      </xsl:document>
+<xsl:document href="unites.html">
+        <html>
+          <head><title>Intervenants</title></head>
+          <body>
+              <xsl:call-template name="liste-des-unites" />
+          </body>
+        </html>
+      </xsl:document>
   </xsl:template>
 
   <xsl:template name="liste-des-unites">
@@ -18,7 +81,7 @@
         <xsl:value-of select="nom" /> </div>
      <xsl:value-of select="credit" />
       <xsl:value-of select="string(resume)" />
-      <a><xsl:attribute name="href">#<xsl:value-of select="ref_intervenant/@ref" />
+      <a><xsl:attribute name="href">intervenants.html#<xsl:value-of select="ref_intervenant/@ref" />
       </xsl:attribute>
         <xsl:value-of select="ref_intervenant/@ref" /> </a>
     </li>
@@ -42,7 +105,6 @@
 
 <xsl:template match="intervenant">
 
-<ul></ul>
 </xsl:template>
 
 </xsl:stylesheet>
