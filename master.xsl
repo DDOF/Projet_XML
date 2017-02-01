@@ -14,10 +14,12 @@
     <h2><xsl:value-of select="nom" /></h2>
 <xsl:value-of select="description" />
 <xsl:value-of select="débouchés" />
- <xsl:for-each select="semestre">
-<xsl:value-of select="@numero" />
+ <ul><xsl:for-each select="semestre">
+<li><xsl:value-of select="@numero" /></li>
+<ul>
 <xsl:for-each select="role">
-<xsl:value-of select="@type"/>
+<li><xsl:value-of select="@type"/></li>
+    <ul>
     <xsl:for-each select="ref_unite">
     
       <li><a><xsl:attribute name="href">../unites/<xsl:value-of select="@ref" />.html
@@ -25,8 +27,10 @@
 <xsl:value-of select="text()"/>         
 </a></li>
      </xsl:for-each>
-     </xsl:for-each>
-     </xsl:for-each>
+     </ul>
+     </xsl:for-each></ul>
+
+     </xsl:for-each></ul>
     </xsl:document>
      </xsl:for-each>
 
@@ -37,6 +41,30 @@
       </xsl:attribute>
         <h2><xsl:value-of select="nom" /> </h2></div>
      <xsl:value-of select="mail" />
+     <xsl:variable name="id" select="@id"/>
+
+     <ul>
+     <xsl:for-each select="//unite/ref_intervenant">
+        <xsl:if test="@ref = $id">
+             <li><a><xsl:attribute name="href">../unites/<xsl:value-of select="../@id" />.html
+      </xsl:attribute>
+      <xsl:value-of select="../nom"/>
+    </a></li>
+      </xsl:if>
+     </xsl:for-each>
+   </ul>
+                <xsl:variable name="nom" select="nom"/>
+
+     <ul>
+     <xsl:for-each select="//parcours">
+        <xsl:if test="responsable = $nom">
+             <li><a><xsl:attribute name="href">../parcours/<xsl:value-of select="//parcours/nom" />.html
+      </xsl:attribute>
+      <xsl:value-of select="//parcours/nom"/>
+    </a></li>
+      </xsl:if>
+     </xsl:for-each>
+   </ul>
     </xsl:document>
      </xsl:for-each>
 
@@ -48,9 +76,21 @@
         <h2><xsl:value-of select="nom" /></h2></div>
      <xsl:value-of select="credit" />
       <xsl:value-of select="string(resume)" />
-      <a><xsl:attribute name="href">intervenants.html#<xsl:value-of select="ref_intervenant/@ref" />
+      <a><xsl:attribute name="href">../intervenants.html#<xsl:value-of select="ref_intervenant/@ref" />
       </xsl:attribute>
         <xsl:value-of select="ref_intervenant/@ref" /> </a>
+             <xsl:variable name="id" select="@id"/>
+
+     <ul>
+     <xsl:for-each select="//parcours//ref_unite">
+        <xsl:if test="@ref = $id">
+             <li><a><xsl:attribute name="href">../parcours/<xsl:value-of select="//parcours/nom" />.html
+      </xsl:attribute>
+      <xsl:value-of select="//parcours/nom"/>
+    </a></li>
+      </xsl:if>
+     </xsl:for-each>
+   </ul>
     </xsl:document>
      </xsl:for-each>
 
@@ -74,19 +114,21 @@
 
   <xsl:template name="liste-des-unites">
     <h1> Liste des Unités</h1>
-    <ul>
-    <xsl:for-each select="//unite"><li>
+    
+    <xsl:for-each select="//unite"><ul>
       <div><xsl:attribute name="id"><xsl:value-of select="@id" />
       </xsl:attribute>
-        <xsl:value-of select="nom" /> </div>
-     <xsl:value-of select="credit" />
-      <xsl:value-of select="string(resume)" />
-      <a><xsl:attribute name="href">intervenants.html#<xsl:value-of select="ref_intervenant/@ref" />
+            <li><a><xsl:attribute name="href">unites/<xsl:value-of select="@id" />.html</xsl:attribute>
+        <h2><xsl:value-of select="nom" /> </h2></a></li>
+        </div>
+     <li><xsl:value-of select="credit" /></li>
+      <li><xsl:value-of select="string(resume)" /></li>
+      <li><a><xsl:attribute name="href">intervenants.html#<xsl:value-of select="ref_intervenant/@ref" />
       </xsl:attribute>
         <xsl:value-of select="ref_intervenant/@ref" /> </a>
-    </li>
+    </li></ul>
 </xsl:for-each>
-  </ul>
+  
   </xsl:template>
 
 
@@ -96,7 +138,9 @@
     <xsl:for-each select="//intervenant"><li>
       <div><xsl:attribute name="id"><xsl:value-of select="@id" />
       </xsl:attribute>
-        <h2><xsl:value-of select="nom" /> </h2></div>
+            <li><a><xsl:attribute name="href">int/<xsl:value-of select="nom" />.html</xsl:attribute>
+        <h2><xsl:value-of select="nom" /> </h2></a></li>
+        </div>
      <xsl:value-of select="mail" />
    </li>
      </xsl:for-each>
