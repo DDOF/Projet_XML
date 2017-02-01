@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf8"?>
 <!DOCTYPE master SYSTEM "master.dtd">
 <master>
     <parcours>
         <responsable>Remi MORIN</responsable>
-        <nom> Master 1</nom>
+        <nom>Master 1</nom>
         <description> L'objectif de cette première année est de donner les bases indispensables permettant, en deuxième année, de choisir une spécialisation dans un domaine précis. Sur les 60 crédits de cette première année, 15 crédits correspondent à des enseignements optionnels. Ces options permettent de construire un parcours adapté. Un choix entre stage ou projet encadré est également proposé au semestre de printemps.</description>
-        <débouchés></débouchés>
+        <débouchés/>
         <semestre numero="S1">
             <role type="obligatoires">
                 <ref_unite ref="ENSINAU1">Génie Logiciel (6 crédits)</ref_unite>
@@ -48,7 +48,7 @@
     </parcours>
     <parcours>
         <responsable>Omar BOUCELMA</responsable>
-        <nom>Systèmes d'informations répartis</nom>
+        <nom>Systèmes dinformations répartis</nom>
         <description>Le programme vise la formation de spécialistes dans des métiers à forte valeur ajoutée au travers des compétences acquises dans trois domaines clés de l’informatique : les technologies avancées du Web (services web, multimédia, etc.), les nouveaux modes de développement du logiciel (Cloud, Mobile, etc.) et les processus métiers de l’entreprise.</description>
         <débouchés>La spécialité SIR vise des métiers de l’informatique à forte valeur ajoutée grâce aux compétences acquises dans trois domaines clés : les technologies avancées du Web, les nouveaux modes de développement et de déploiement de solutions logicielles et les processus métiers de l’entreprise.
             
@@ -83,52 +83,52 @@
     </parcours>
     <intervenant id="massat">
         <nom>Jean-Luc MASSAT</nom>
-        <web></web>
+        <web/>
         <mail>jean-luc.massat@univ-amu.fr</mail>
     </intervenant>
     <intervenant id="olive">
         <nom>Frederic OLIVE</nom>
-        <web></web>
+        <web/>
         <mail>frederic.olive@univ-amu.fr</mail>
     </intervenant>
     <intervenant id="godard">
         <nom>Emmanuel GODARD</nom>
-        <web></web>
+        <web/>
         <mail>emmanuel.godard@univ-amu.fr</mail>
     </intervenant>
     <intervenant id="morin">
         <nom>Remi MORIN</nom>
-        <web></web>
+        <web/>
         <mail>remi.morin@univ-amu.fr</mail>
     </intervenant>
     <intervenant id="sabatier">
         <nom>laude SABATIER</nom>
-        <web></web>
+        <web/>
         <mail>claude.sabatier@univ-amu.fr</mail>
     </intervenant>
     <intervenant id="broche">
         <nom>Martine BROCHE</nom>
-        <web></web>
+        <web/>
         <mail>martine.broche@univ-amu.fr</mail>
     </intervenant>
     <intervenant id="jamet">
         <nom>Line JAMET</nom>
-        <web></web>
+        <web/>
         <mail>line.jakubiec@univ-amu.fr</mail>
     </intervenant>
     <intervenant id="estellon">
         <nom>Bertrand ESTELLON</nom>
-        <web></web>
+        <web/>
         <mail>bertrand.estellon@univ-amu.fr</mail>
     </intervenant>
     <intervenant id="novelli">
         <nom>Noel NOVELLI</nom>
-        <web></web>
+        <web/>
         <mail>noel.novelli@univ-amu.fr</mail>
     </intervenant>
     <intervenant id="creignou">
         <nom>Nadia CREIGNOU</nom>
-        <web></web>
+        <web/>
         <mail>nadia.creignou@univ-amu.fr</mail>
     </intervenant>
     <unite id="ENSINAU1">
@@ -140,9 +140,9 @@
             Spécification et conception (artefact : notation UML)
             Design patterns
         </resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;</lieu>
-        <ref_intervenant ref="massat"></ref_intervenant>
+        <ref_intervenant ref="massat"/>
     </unite>
     <unite id="ENSINAU2">
         <nom>Complexité </nom>
@@ -153,9 +153,9 @@
             Classes P et NP. Problèmes NP-complets.
             Méthodes de résolution des problèmes NP-Complets.
         </resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;</lieu>
-        <ref_intervenant ref="olive"></ref_intervenant>
+        <ref_intervenant ref="olive"/>
     </unite>
     <unite id="ENSINAU3">
         <nom>Réseaux </nom>
@@ -171,9 +171,9 @@
             Bases des protocoles cryptographiques (terminologie, architecture à clef publique).
             Introduction à la Sécurité des réseaux.
         </resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;</lieu>
-        <ref_intervenant ref="godard"></ref_intervenant>
+        <ref_intervenant ref="godard"/>
     </unite>
     <unite id="ENSINAU4">
         <nom>Programmation fonctionnelle</nom>
@@ -201,17 +201,17 @@
             5- Implantation du filtrage en OCaml
             
             Termes formels, substitutions, filtrage.</resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;</lieu>
-        <ref_intervenant ref="novelli"></ref_intervenant>
+        <ref_intervenant ref="novelli"/>
     </unite>
     <unite id="ENSINAU12">
         <nom> BDR : approfondissement</nom>
         <credit>3</credit>
         <resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;</lieu>
-        <ref_intervenant ref="sabatier"></ref_intervenant>
+        <ref_intervenant ref="sabatier"/>
     </unite>
     <unite id="ENSINAU6">
         <nom>Programmation logique</nom>
@@ -222,9 +222,9 @@
             Analyseurs syntaxiques. Construction d'un arbre syntaxique. Liste des feuilles d'un arbre. Freeze et analyse par feuille.
             Règles prédéfinies.
         </resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;</lieu>
-        <ref_intervenant ref="jamet"></ref_intervenant>
+        <ref_intervenant ref="jamet"/>
     </unite>
     <unite id="ENSINAU7">
         <nom>Outils de l'internet</nom>
@@ -237,17 +237,17 @@
             Sécurité.
             Les nouvelles et futures technologies.
         </resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;</lieu>
-        <ref_intervenant ref="estellon"></ref_intervenant>
+        <ref_intervenant ref="estellon"/>
     </unite>
     <unite id="ENSINAU8">
         <nom>Système embarqué </nom>
         <credit>3</credit>
         <resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;</lieu>
-        <ref_intervenant ref="massat"></ref_intervenant>
+        <ref_intervenant ref="massat"/>
     </unite>
     <unite id="ENSINAU9">
         <nom>Fondamentaux pour l'ingénierie des langues</nom>
@@ -257,9 +257,9 @@
             Algorithmes d'analyse syntaxique pour grammaires ambiguës
             Transducteurs finis et leur application en TAL
         </resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;</lieu>
-        <ref_intervenant ref="creignou"></ref_intervenant>
+        <ref_intervenant ref="creignou"/>
     </unite>
     <unite id="ENSINAU10">
         <nom>Modèles à évènements discrets</nom>
@@ -267,25 +267,25 @@
         <resume>Posséder les notions de base en modélisation et analyse de systèmes dynamiques à événements discrets et particulièrement appréhender le formalisme réseau de
             
             Pétri. Étudier la conception et la spécification des systèmes réactifs à travers l'analyse du modèle à évènements discrets (concurrence, parallélisme, synchronisation).</resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;</lieu>
-        <ref_intervenant ref="novelli"></ref_intervenant>
+        <ref_intervenant ref="novelli"/>
     </unite>
     <unite id="ENSINAU13">
         <nom>Pratique de la cryptographie</nom>
         <credit>3</credit>
         <resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;</lieu>
-        <ref_intervenant ref="morin"></ref_intervenant>
+        <ref_intervenant ref="morin"/>
     </unite>
     <unite id="ENSINBU1">
         <nom>Anglais </nom>
         <credit>3</credit>
         <resume>Un enseignement destiné à confirmer l'utilisation de l'anglais dans le contexte de l'informatique ainsi que dans la pratique professionnelle.</resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;</lieu>
-        <ref_intervenant ref="broche"></ref_intervenant>
+        <ref_intervenant ref="broche"/>
     </unite>
     <unite id="ENSINBU2">
         <nom>Communication </nom>
@@ -309,9 +309,9 @@
             Pré-requis :
             
             Particulièrement utile pour un choix d’options, les échanges internationaux et la formation continue.</resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;</lieu>
-        <ref_intervenant ref="broche"></ref_intervenant>
+        <ref_intervenant ref="broche"/>
     </unite>
     <unite id="ENSINBU4">
         <nom>XML </nom>
@@ -320,9 +320,9 @@
             XML, DTD, XSD
             XPath, XSLT, XQuery
         </resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;</lieu>
-        <ref_intervenant ref="massat"></ref_intervenant>
+        <ref_intervenant ref="massat"/>
     </unite>
     <unite id="ENSINBU5">
         <nom>Algorithmique et recherche opérationnelle </nom>
@@ -334,33 +334,33 @@
             Programmation dynamique (sac à dos, ordonnancement, ...)
             Algorithmes à performance garantie
         </resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;</lieu>
-        <ref_intervenant ref="novelli"></ref_intervenant>
+        <ref_intervenant ref="novelli"/>
     </unite>
     <unite id="ENSINBU15">
         <nom>Programmation parallèle</nom>
         <credit>3</credit>
         <resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;</lieu>
-        <ref_intervenant ref="morin"></ref_intervenant>
+        <ref_intervenant ref="morin"/>
     </unite>
     <unite id="ENSINBU6">
-        <nom></nom>
+        <nom/>
         <credit>6</credit>
         <resume>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.</resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;,&jer;</lieu>
-        <ref_intervenant ref="massat"></ref_intervenant>
+        <ref_intervenant ref="massat"/>
     </unite>
     <unite id="ENSINBU7">
         <nom>Projet</nom>
         <credit>6</credit>
         <resume>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.</resume>
-        <plan></plan>
-        <lieu></lieu>
-        <ref_intervenant ref="morin"></ref_intervenant>
+        <plan/>
+        <lieu/>
+        <ref_intervenant ref="morin"/>
     </unite>
     <unite id="ENSINBU8">
         <nom>Sémantique </nom>
@@ -384,17 +384,17 @@
             Landin.
             
             Sémantique dénotationnelles : cas fonctionnel(cf.chapitre 4) et cas d'un petit langage impératif.</resume>
-        <plan></plan>
+        <plan/>
         <lieu>&jer;</lieu>
-        <ref_intervenant ref="estellon"></ref_intervenant>
+        <ref_intervenant ref="estellon"/>
     </unite>
     <unite id="ENSINBU9">
         <nom>Algorithmique distribuée</nom>
         <credit>3</credit>
         <resume>Un système distribué est un ensemble d’entités autonomes de calcul (ordinateurs, PDA, processeurs, processus, processus léger, ...) interconnectées et qui peuvent communiquer entre eux. Ce cours est une introduction aux méthodes pour la conception d'algorithmes dans de tels systèmes. Il donne une présentation des différents types de systèmes distribués et des différents problèmes que l'on doit résoudre. Les problèmes abordés sont : l'élection, le consensus, la diffusion, l'exploration, la réplication, l'exploration et le rendez-vous avec des agent mobiles.</resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;</lieu>
-        <ref_intervenant ref="morin"></ref_intervenant>
+        <ref_intervenant ref="morin"/>
     </unite>
     <unite id="ENSINBU10">
         <nom> Intégration des systèmes d'information </nom>
@@ -405,9 +405,9 @@
             Systèmes d'Information d'entreprises
             Systèmes d'Information sur Internet
         </resume>
-        <plan></plan>
+        <plan/>
         <lieu>&jer;</lieu>
-        <ref_intervenant ref="creignou"></ref_intervenant>
+        <ref_intervenant ref="creignou"/>
     </unite>
     <unite id="ENSINBU11">
         <nom>Initiation à la fouille de données et à l'optimisation des SGBD</nom>
@@ -415,9 +415,9 @@
         <resume>Actuellement, de plus en plus de données sont conservées sans être réellement exploitées. Elles représentent pourtant une source importante d’information. La fouille de données peut-être définie comme le processus permettant d’extraire de l’information non triviale et non préalablement connue à partir des données. Dans cet enseignement, nous nous focaliserons sur l’extraction de corrélations entre les données (règle d’association, Dépendances Fonctionnelles...) et nous verrons des techniques de mesure de la qualité des données (détection et correction d’erreur).
             
             Par ailleurs, nous passerons du côté obscur des SGBD en mettant évidence le lien existant entre les performances d'un SGBD et les choix d'implémentation des différents algorithmes utilisés (gestion de la concurrence, reprise sur panne, transaction...) ainsi que les différentes implémentations existantes des opérations de base des SGBD comme les jointures ou les tris accompagnés de leurs conditions d'utilisation.</resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;</lieu>
-        <ref_intervenant ref="sabatier"></ref_intervenant>
+        <ref_intervenant ref="sabatier"/>
     </unite>
     <unite id="ENSINBU12">
         <nom>Intelligence artificielle</nom>
@@ -430,9 +430,9 @@
             Actions, temps et planification
             Programmation par contraintes et réseaux de contraintes
         </resume>
-        <plan></plan>
+        <plan/>
         <lieu>&jer;</lieu>
-        <ref_intervenant ref="olive"></ref_intervenant>
+        <ref_intervenant ref="olive"/>
     </unite>
     <unite id="ENSINBU13">
         <nom>Algorithme à performance garantie</nom>
@@ -446,25 +446,25 @@
             Algorithmes d'approximation par programmation linéaire : l'arrondi et la méthode primale-duale (MAXSAT, couverture d'ensemble, multicoupes et multiflots dans les arbres) ;
             Algorithmes en ligne et compétitivité : la pagination et les k-serveurs.
         </resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;</lieu>
-        <ref_intervenant ref="jamet"></ref_intervenant>
+        <ref_intervenant ref="jamet"/>
     </unite>
     <unite id="ENSINBU16">
         <nom>Introduction à l'apprentissage automatique</nom>
         <credit>3</credit>
         <resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
-        <plan></plan>
+        <plan/>
         <lieu>&lum;</lieu>
-        <ref_intervenant ref="estellon"></ref_intervenant>
+        <ref_intervenant ref="estellon"/>
     </unite>
     <unite id="ENSINCU60">
         <nom>Architectures réparties - JEE</nom>
         <credit>6</credit>
         <resume>Cette UE contient les concepts et outils de base pour le développement de systèmes et d'applications distribués sur le Web. Les architectures client serveur seront revisitées, et un focus particulier sera fait sur les servlets, JSP, EJB, J2EE etc.</resume>
-        <plan></plan>
+        <plan/>
         <lieu>&jer;</lieu>
-        <ref_intervenant></ref_intervenant>
+        <ref_intervenant/>
     </unite>
     <unite id="ENSINCU64">
         <nom>Développement d'applications mobiles</nom>
@@ -480,17 +480,17 @@
             les librairies,
             les applications connectées (Client http Android, HttpURLConnection , Google Cloud Messaging,…).
         </resume>
-        <plan></plan>
+        <plan/>
         <lieu>&jer;</lieu>
-        <ref_intervenant></ref_intervenant>
+        <ref_intervenant/>
     </unite>
     <unite id="ENSINCU65">
         <nom>Gestion de projet</nom>
         <credit>3</credit>
         <resume>Cette UE vise à inculquer un mode de fonctionnement projet. Les aspects techniques (délais, jalons, indicateurs, etc.) et humains (communication, gestion ds conflits, etc) seront abordés.</resume>
-        <plan></plan>
-        <lieu></lieu>
-        <ref_intervenant></ref_intervenant>
+        <plan/>
+        <lieu/>
+        <ref_intervenant/>
     </unite>
     <unite id="ENSINCU68">
         <nom>Cloud computing</nom>
@@ -502,41 +502,41 @@
             Risques et opportunités du cloud : gestion de la sécurité (données sensibles), accès instantanés à des ressources de calcul et de stockage (élasticité),
             Création et déploiement d’applications : Google Cloud, Amazon, Azure, ….
         </resume>
-        <plan></plan>
+        <plan/>
         <lieu>&jer;</lieu>
-        <ref_intervenant></ref_intervenant>
+        <ref_intervenant/>
     </unite>
     <unite id="ENSINCU74">
         <nom> Introduction au Big Data</nom>
         <credit>3</credit>
         <resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
-        <plan></plan>
+        <plan/>
         <lieu>&jer;</lieu>
-        <ref_intervenant></ref_intervenant>
+        <ref_intervenant/>
     </unite>
     <unite id="ENSINCU75">
         <nom>Business process</nom>
         <credit>3</credit>
         <resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
-        <plan></plan>
+        <plan/>
         <lieu>&jer;</lieu>
-        <ref_intervenant></ref_intervenant>
+        <ref_intervenant/>
     </unite>
     <unite id="ENSISCU28">
         <nom>RI8 : Web services</nom>
-        <credit></credit>
+        <credit/>
         <resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
-        <plan></plan>
+        <plan/>
         <lieu>&jer;</lieu>
-        <ref_intervenant></ref_intervenant>
+        <ref_intervenant/>
     </unite>
     <unite id="ENSINCU27">
         <nom>Anglais 2</nom>
         <credit>3</credit>
         <resume>Expression orale et écrite : exposés sur des sujets scientifiques et / ou professionnels, travaux écrits. Préparation et passage du TOEIC.</resume>
-        <plan></plan>
+        <plan/>
         <lieu>&jer;</lieu>
-        <ref_intervenant></ref_intervenant>
+        <ref_intervenant/>
     </unite>
     <unite id="ENSINCU28">
         <nom>Communication 2</nom>
@@ -551,24 +551,24 @@
             Préparation aux entretiens de recrutement
             Rédaction de curriculum vitae et de lettres de motivation
         </resume>
-        <plan></plan>
+        <plan/>
         <lieu>&jer;</lieu>
-        <ref_intervenant ref="broche"></ref_intervenant>
+        <ref_intervenant ref="broche"/>
     </unite>
     <unite id="ENSINDU3">
         <nom>Projet industriel de mise en application</nom>
         <credit>6</credit>
         <resume>Rédaction du cahier des charges. Conception de l'application. Développement et test. Rédaction d'un mémoire et présentation.</resume>
-        <plan></plan>
+        <plan/>
         <lieu>&jer;</lieu>
-        <ref_intervenant></ref_intervenant>
+        <ref_intervenant/>
     </unite>
     <unite id="ENSINDU4">
         <nom>Stage en entreprise</nom>
         <credit>24</credit>
         <resume>Recherche d'un stage. Validation du sujet de stage. Suivi du bon déroulement du stage. Aide à la rédaction du mémoire de stage. Soutenance et évaluation du stage.</resume>
-        <plan></plan>
+        <plan/>
         <lieu>&jer;</lieu>
-        <ref_intervenant></ref_intervenant>
+        <ref_intervenant/>
     </unite>
 </master>
