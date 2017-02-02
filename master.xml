@@ -1,83 +1,83 @@
-<?xml version="1.0" encoding="utf8"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE master SYSTEM "master.dtd">
 <master>
     <parcours>
         <responsable>Remi MORIN</responsable>
         <nom>Master 1</nom>
         <description> 
-            L'objectif de cette premiÃ¨re annÃ©e est de donner les bases indispensables permettant, en deuxiÃ¨me annÃ©e, de choisir une spÃ©cialisation dans un domaine prÃ©cis. Sur les 60 crÃ©dits de cette premiÃ¨re annÃ©e, 15 crÃ©dits correspondent Ã  des enseignements optionnels. Ces options permettent de construire un parcours adaptÃ©. Un choix entre stage ou projet encadrÃ© est Ã©galement proposÃ© au semestre de printemps.</description>
-        <dÃ©bouchÃ©s/>
+            L'objectif de cette première année est de donner les bases indispensables permettant, en deuxième année, de choisir une spécialisation dans un domaine précis. Sur les 60 crédits de cette première année, 15 crédits correspondent à des enseignements optionnels. Ces options permettent de construire un parcours adapté. Un choix entre stage ou projet encadré est également proposé au semestre de printemps.</description>
+        <débouchés/>
         <semestre numero="S1">
             <role type="obligatoires">
-                <ref_unite ref="ENSINAU1">GÃ©nie Logiciel (6 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINAU2">ComplexitÃ© (6 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINAU3">RÃ©seaux (6 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINAU4">Programmation fonctionnelle (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINAU12">BDR : approfondissement (3 crÃ©dits)</ref_unite>            
+                <ref_unite ref="ENSINAU1">Génie Logiciel (6 crédits)</ref_unite>
+                <ref_unite ref="ENSINAU2">Complexité (6 crédits)</ref_unite>
+                <ref_unite ref="ENSINAU3">Réseaux (6 crédits)</ref_unite>
+                <ref_unite ref="ENSINAU4">Programmation fonctionnelle (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINAU12">BDR : approfondissement (3 crédits)</ref_unite>            
             </role>
             <role type="options">
-                <ref_unite ref="ENSINAU6">Programmation logique (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINAU7">Outils de l'internet (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINAU8">SystÃ¨me embarquÃ© (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINAU9">Fondamentaux pour l'ingÃ©nierie des langues (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINBU10">ModÃ¨les Ã  Ã©vÃ¨nements discrets (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINBU13">Pratique de la cryptographie (3 crÃ©dits)</ref_unite>
+                <ref_unite ref="ENSINAU6">Programmation logique (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINAU7">Outils de l'internet (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINAU8">Système embarqué (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINAU9">Fondamentaux pour l'ingénierie des langues (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINBU10">Modèles à évènements discrets (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINBU13">Pratique de la cryptographie (3 crédits)</ref_unite>
             </role>
         </semestre>
         <semestre numero="S2">
             <role type="obligatoires">
-                <ref_unite ref="ENSINBU1">Anglais (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINBU2">Communication (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINBU4">XML (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINBU5">Algorithmique et recherche opÃ©rationnelle (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINBU15">Programmation parallÃ¨le (3 crÃ©dits)</ref_unite>
+                <ref_unite ref="ENSINBU1">Anglais (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINBU2">Communication (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINBU4">XML (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINBU5">Algorithmique et recherche opérationnelle (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINBU15">Programmation parallèle (3 crédits)</ref_unite>
             </role>
             <role>
-                <ref_unite ref="ENSINBU6">Projet (6 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINAU7">Stage de deux mois (6 crÃ©dits)</ref_unite>
+                <ref_unite ref="ENSINBU6">Projet (6 crédits)</ref_unite>
+                <ref_unite ref="ENSINAU7">Stage de deux mois (6 crédits)</ref_unite>
             </role>
             <role type="options">
-                <ref_unite ref="ENSINBU8">SÃ©mantique (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINBU9">Algorithmique distribuÃ©e (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINBU10">IntÃ©gration des systÃ¨mes d'information (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINBU11">Initiation Ã  la fouille de donnÃ©es et Ã  l'optimisation des SGBD (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINBU12">Intelligence artificielle (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINBU13">Algorithme Ã  performance garantie (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINBU16">Introduction Ã  l'apprentissage automatique (3 crÃ©dits)</ref_unite>
+                <ref_unite ref="ENSINBU8">Sémantique (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINBU9">Algorithmique distribuée (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINBU10">Intégration des systèmes d'information (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINBU11">Initiation à la fouille de données et à l'optimisation des SGBD (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINBU12">Intelligence artificielle (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINBU13">Algorithme à performance garantie (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINBU16">Introduction à l'apprentissage automatique (3 crédits)</ref_unite>
             </role>
         </semestre>
     </parcours>
     <parcours>
         <responsable>Omar BOUCELMA</responsable>
-        <nom>SystÃ¨mes dinformations rÃ©partis</nom>
-        <description>Le programme vise la formation de spÃ©cialistes dans des mÃ©tiers Ã  forte valeur ajoutÃ©e au travers des compÃ©tences acquises dans trois domaines clÃ©s de lâ€™informatique : les technologies avancÃ©es du Web (services web, multimÃ©dia, etc.), les nouveaux modes de dÃ©veloppement du logiciel (Cloud, Mobile, etc.) et les processus mÃ©tiers de lâ€™entreprise.</description>
-        <dÃ©bouchÃ©s>La spÃ©cialitÃ© SIR vise des mÃ©tiers de lâ€™informatique Ã  forte valeur ajoutÃ©e grÃ¢ce aux compÃ©tences acquises dans trois domaines clÃ©s : les technologies avancÃ©es du Web, les nouveaux modes de dÃ©veloppement et de dÃ©ploiement de solutions logicielles et les processus mÃ©tiers de lâ€™entreprise.
+        <nom>Systèmes dinformations répartis</nom>
+        <description>Le programme vise la formation de spécialistes dans des métiers à forte valeur ajoutée au travers des compétences acquises dans trois domaines clés de l&#8217;informatique : les technologies avancées du Web (services web, multimédia, etc.), les nouveaux modes de développement du logiciel (Cloud, Mobile, etc.) et les processus métiers de l&#8217;entreprise.</description>
+        <débouchés>La spécialité SIR vise des métiers de l&#8217;informatique à forte valeur ajoutée grâce aux compétences acquises dans trois domaines clés : les technologies avancées du Web, les nouveaux modes de développement et de déploiement de solutions logicielles et les processus métiers de l&#8217;entreprise.
             
-            Parmi les mÃ©tiers visÃ©s on trouve :
+            Parmi les métiers visés on trouve :
             
-            Architecte en SystÃ¨mes dâ€™Information,
-            IngÃ©nieur DÃ©veloppement Logiciels,
-            IngÃ©nieur IntÃ©gration,
+            Architecte en Systèmes d&#8217;Information,
+            Ingénieur Développement Logiciels,
+            Ingénieur Intégration,
             Consultant ERP/BPM,
             Chef de projet.
-        </dÃ©bouchÃ©s>
+        </débouchés>
         <semestre numero="S3">
             <role type="obligatoires">
-                <ref_unite ref="ENSINCU60">Architectures rÃ©parties - JEE (6 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINCU64">DÃ©veloppement d'applications mobiles (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINCU65">Gestion de projet (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINCU68">Cloud computing (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINCU74">Introduction au Big Data (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINCU75">Business process (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSISCU28">RI8 : Web services (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINCU27">Anglais 2 (3 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINCU28">Communication 2 (3 crÃ©dits)</ref_unite>
+                <ref_unite ref="ENSINCU60">Architectures réparties - JEE (6 crédits)</ref_unite>
+                <ref_unite ref="ENSINCU64">Développement d'applications mobiles (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINCU65">Gestion de projet (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINCU68">Cloud computing (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINCU74">Introduction au Big Data (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINCU75">Business process (3 crédits)</ref_unite>
+                <ref_unite ref="ENSISCU28">RI8 : Web services (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINCU27">Anglais 2 (3 crédits)</ref_unite>
+                <ref_unite ref="ENSINCU28">Communication 2 (3 crédits)</ref_unite>
             </role>
         </semestre>
         <semestre numero="S4">
             <role type="obligatoires">
-                <ref_unite ref="ENSINDU3">Projet industriel de mise en application (6 crÃ©dits)</ref_unite>
-                <ref_unite ref="ENSINDU4">Stage en entreprise (24 crÃ©dits)</ref_unite>
+                <ref_unite ref="ENSINDU3">Projet industriel de mise en application (6 crédits)</ref_unite>
+                <ref_unite ref="ENSINDU4">Stage en entreprise (24 crédits)</ref_unite>
             </role>
         </semestre>
         
@@ -133,12 +133,12 @@
         <mail>nadia.creignou@univ-amu.fr</mail>
     </intervenant>
     <unite id="ENSINAU1">
-        <nom>GÃ©nie Logiciel</nom>
+        <nom>Génie Logiciel</nom>
         <credit>6</credit>
         <resume>
             Processus logiciel
             Gestion de projet
-            SpÃ©cification et conception (artefact : notation UML)
+            Spécification et conception (artefact : notation UML)
             Design patterns
         </resume>
         <plan/>
@@ -146,31 +146,31 @@
         <ref_intervenant ref="massat"/>
     </unite>
     <unite id="ENSINAU2">
-        <nom>ComplexitÃ© </nom>
+        <nom>Complexité </nom>
         <credit>6</credit>
         <resume>
-            Rappels sur les notions d'analyse de la complexitÃ© des algorithmes et des problÃ¨mes.
-            Notion de problÃ¨mes (dÃ©cision, recherche, dÃ©nombrement, Ã©numÃ©ration, optimisation). Bornes infÃ©rieures de complexitÃ©.
-            Classes P et NP. ProblÃ¨mes NP-complets.
-            MÃ©thodes de rÃ©solution des problÃ¨mes NP-Complets.
+            Rappels sur les notions d'analyse de la complexité des algorithmes et des problèmes.
+            Notion de problèmes (décision, recherche, dénombrement, énumération, optimisation). Bornes inférieures de complexité.
+            Classes P et NP. Problèmes NP-complets.
+            Méthodes de résolution des problèmes NP-Complets.
         </resume>
         <plan/>
         <lieu>&lum;</lieu>
         <ref_intervenant ref="olive"/>
     </unite>
     <unite id="ENSINAU3">
-        <nom>RÃ©seaux </nom>
+        <nom>Réseaux </nom>
         <credit>6</credit>
         <resume>
             Architecture en couches, standard OSI
             Couche physique
-            Couche liaison de DonnÃ©es
-            RÃ©seau IP
+            Couche liaison de Données
+            Réseau IP
             Algorithmes de routage, routage IP
             Protocole TCP/IP
             Couche Application : HTTP, SMTP, FTP, ...
-            Bases des protocoles cryptographiques (terminologie, architecture Ã  clef publique).
-            Introduction Ã  la SÃ©curitÃ© des rÃ©seaux.
+            Bases des protocoles cryptographiques (terminologie, architecture à clef publique).
+            Introduction à la Sécurité des réseaux.
         </resume>
         <plan/>
         <lieu>&lum;</lieu>
@@ -179,25 +179,25 @@
     <unite id="ENSINAU4">
         <nom>Programmation fonctionnelle</nom>
         <credit>3</credit>
-        <resume>1- Introduction Ã  la programmation fonctionnelle, sur l'exemple du langage
+        <resume>1- Introduction à la programmation fonctionnelle, sur l'exemple du langage
             
             OCaml
             
-            Expressions, Ã©valuation, types de base. Polymorphisme, ordre supÃ©rieur.
+            Expressions, évaluation, types de base. Polymorphisme, ordre supérieur.
             
-            Fonctions rÃ©cursives, filtrage. Les diverses stratÃ©gies d'Ã©valuation, application Ã  la programmation d'un opÃ©rateur de point fixe.
+            Fonctions récursives, filtrage. Les diverses stratégies d'évaluation, application à la programmation d'un opérateur de point fixe.
             
             2- Les types
             
-            Sommes, types rÃ©cursifs, polymorphes. Arbres. Filtrage.
+            Sommes, types récursifs, polymorphes. Arbres. Filtrage.
             
-            3- SÃ©mantique opÃ©rationnelle
+            3- Sémantique opérationnelle
             
-            Liaisons, environnements, clÃ´tures. Ã‰valuation des fonctions rÃ©cursives .
+            Liaisons, environnements, clôtures. Évaluation des fonctions récursives .
             
-            4- Aspects impÃ©ratifs
+            4- Aspects impératifs
             
-            Exceptions, entrÃ©es-sorties, sÃ©quencement, fichiers, rÃ©fÃ©rences, tableaux, enregistrements.
+            Exceptions, entrées-sorties, séquencement, fichiers, références, tableaux, enregistrements.
             
             5- Implantation du filtrage en OCaml
             
@@ -209,7 +209,7 @@
     <unite id="ENSINAU12">
         <nom> BDR : approfondissement</nom>
         <credit>3</credit>
-        <resume>nous sommes dÃ©solÃ©, mais nous n'avons pas encore de rÃ©sumÃ©.</resume>
+        <resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
         <plan/>
         <lieu>&lum;</lieu>
         <ref_intervenant ref="sabatier"/>
@@ -218,10 +218,10 @@
         <nom>Programmation logique</nom>
         <credit>3</credit>
         <resume>
-            Introduction. Forme gÃ©nÃ©rale des rÃ¨gles. Effacement, unification, backtracking. ContrÃ´le de l'exÃ©cution.
-            Listes, arbres et n-uplets. Liste reprÃ©sentÃ©e par diffÃ©rence de listes. Ajout en tÃªte et en queue, concatÃ©nation.
+            Introduction. Forme générale des règles. Effacement, unification, backtracking. Contrôle de l'exécution.
+            Listes, arbres et n-uplets. Liste représentée par différence de listes. Ajout en tête et en queue, concaténation.
             Analyseurs syntaxiques. Construction d'un arbre syntaxique. Liste des feuilles d'un arbre. Freeze et analyse par feuille.
-            RÃ¨gles prÃ©dÃ©finies.
+            Règles prédéfinies.
         </resume>
         <plan/>
         <lieu>&lum;</lieu>
@@ -231,11 +231,11 @@
         <nom>Outils de l'internet</nom>
         <credit>3</credit>
         <resume>
-            PrÃ©sentation d'Internet.
+            Présentation d'Internet.
             Les langages et les normes sur Internet.
             Les protocoles : HTTP, HTTP, SMTP, IMAP, POP3
             Les applications web.
-            SÃ©curitÃ©.
+            Sécurité.
             Les nouvelles et futures technologies.
         </resume>
         <plan/>
@@ -243,19 +243,19 @@
         <ref_intervenant ref="estellon"/>
     </unite>
     <unite id="ENSINAU8">
-        <nom>SystÃ¨me embarquÃ© </nom>
+        <nom>Système embarqué </nom>
         <credit>3</credit>
-        <resume>nous sommes dÃ©solÃ©, mais nous n'avons pas encore de rÃ©sumÃ©.</resume>
+        <resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
         <plan/>
         <lieu>&lum;</lieu>
         <ref_intervenant ref="massat"/>
     </unite>
     <unite id="ENSINAU9">
-        <nom>Fondamentaux pour l'ingÃ©nierie des langues</nom>
+        <nom>Fondamentaux pour l'ingénierie des langues</nom>
         <credit>3</credit>
         <resume>
-            Rappel de thÃ©orie des langages
-            Algorithmes d'analyse syntaxique pour grammaires ambiguÃ«s
+            Rappel de théorie des langages
+            Algorithmes d'analyse syntaxique pour grammaires ambiguës
             Transducteurs finis et leur application en TAL
         </resume>
         <plan/>
@@ -263,11 +263,11 @@
         <ref_intervenant ref="creignou"/>
     </unite>
     <unite id="ENSINAU10">
-        <nom>ModÃ¨les Ã  Ã©vÃ¨nements discrets</nom>
+        <nom>Modèles à évènements discrets</nom>
         <credit>3</credit>
-        <resume>PossÃ©der les notions de base en modÃ©lisation et analyse de systÃ¨mes dynamiques Ã  Ã©vÃ©nements discrets et particuliÃ¨rement apprÃ©hender le formalisme rÃ©seau de
+        <resume>Posséder les notions de base en modélisation et analyse de systèmes dynamiques à événements discrets et particulièrement appréhender le formalisme réseau de
             
-            PÃ©tri. Ã‰tudier la conception et la spÃ©cification des systÃ¨mes rÃ©actifs Ã  travers l'analyse du modÃ¨le Ã  Ã©vÃ¨nements discrets (concurrence, parallÃ©lisme, synchronisation).</resume>
+            Pétri. Étudier la conception et la spécification des systèmes réactifs à travers l'analyse du modèle à évènements discrets (concurrence, parallélisme, synchronisation).</resume>
         <plan/>
         <lieu>&lum;</lieu>
         <ref_intervenant ref="novelli"/>
@@ -275,7 +275,7 @@
     <unite id="ENSINAU13">
         <nom>Pratique de la cryptographie</nom>
         <credit>3</credit>
-        <resume>nous sommes dÃ©solÃ©, mais nous n'avons pas encore de rÃ©sumÃ©.</resume>
+        <resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
         <plan/>
         <lieu>&lum;</lieu>
         <ref_intervenant ref="morin"/>
@@ -283,7 +283,7 @@
     <unite id="ENSINBU1">
         <nom>Anglais </nom>
         <credit>3</credit>
-        <resume>Un enseignement destinÃ© Ã  confirmer l'utilisation de l'anglais dans le contexte de l'informatique ainsi que dans la pratique professionnelle.</resume>
+        <resume>Un enseignement destiné à confirmer l'utilisation de l'anglais dans le contexte de l'informatique ainsi que dans la pratique professionnelle.</resume>
         <plan/>
         <lieu>&lum;</lieu>
         <ref_intervenant ref="broche"/>
@@ -291,25 +291,25 @@
     <unite id="ENSINBU2">
         <nom>Communication </nom>
         <credit>3</credit>
-        <resume>chapitre 1  : ThÃ©ories de la communication :
+        <resume>chapitre 1  : Théories de la communication :
             
-            1.1 La thÃ©orie mathÃ©matique de lâ€™information (Shannon, Weaver), la cybernÃ©tique (Wiener)
-            1.2 La thÃ©orie de Palo Alto ( Bateson, Watzlawick) et la thÃ©orie de la communication par les processus (Mucchielli)
+            1.1 La théorie mathématique de l&#8217;information (Shannon, Weaver), la cybernétique (Wiener)
+            1.2 La théorie de Palo Alto ( Bateson, Watzlawick) et la théorie de la communication par les processus (Mucchielli)
             
-            chapitre 2 : RÃ´le de lâ€™interculturalitÃ© dans le travail en Ã©quipe :
+            chapitre 2 : Rôle de l&#8217;interculturalité dans le travail en équipe :
             
-            2.1 Lâ€™enquÃªte interculturelle de Hofstede pour IBM
-            2.2 La gestuelle et le paralangage et la proxÃ©mie dans le monde (Hall)
+            2.1 L&#8217;enquête interculturelle de Hofstede pour IBM
+            2.2 La gestuelle et le paralangage et la proxémie dans le monde (Hall)
             
             chapitre 3 : Notions de management et de travail collaboratif
             
-            3.1 Le travail collaboratif vs le travail coopÃ©ratif
+            3.1 Le travail collaboratif vs le travail coopératif
             3.2 La notion de groupes
-            3.3 Les compÃ©tences managÃ©riales
+            3.3 Les compétences managériales
             
-            PrÃ©-requis :
+            Pré-requis :
             
-            ParticuliÃ¨rement utile pour un choix dâ€™options, les Ã©changes internationaux et la formation continue.</resume>
+            Particulièrement utile pour un choix d&#8217;options, les échanges internationaux et la formation continue.</resume>
         <plan/>
         <lieu>&lum;</lieu>
         <ref_intervenant ref="broche"/>
@@ -326,23 +326,23 @@
         <ref_intervenant ref="massat"/>
     </unite>
     <unite id="ENSINBU5">
-        <nom>Algorithmique et recherche opÃ©rationnelle </nom>
+        <nom>Algorithmique et recherche opérationnelle </nom>
         <credit>3</credit>
         <resume>
-            Programmation linÃ©aire.
+            Programmation linéaire.
             Notions et algorithmes de flots.
             Applications (couplage, affectation, transport, ...)
-            Programmation dynamique (sac Ã  dos, ordonnancement, ...)
-            Algorithmes Ã  performance garantie
+            Programmation dynamique (sac à dos, ordonnancement, ...)
+            Algorithmes à performance garantie
         </resume>
         <plan/>
         <lieu>&lum;</lieu>
         <ref_intervenant ref="novelli"/>
     </unite>
     <unite id="ENSINBU15">
-        <nom>Programmation parallÃ¨le</nom>
+        <nom>Programmation parallèle</nom>
         <credit>3</credit>
-        <resume>nous sommes dÃ©solÃ©, mais nous n'avons pas encore de rÃ©sumÃ©.</resume>
+        <resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
         <plan/>
         <lieu>&lum;</lieu>
         <ref_intervenant ref="morin"/>
@@ -350,7 +350,7 @@
     <unite id="ENSINBU6">
         <nom/>
         <credit>6</credit>
-        <resume>Le but du projet est de mettre en oeuvre, de l'analyse Ã  la programmation, les notions prÃ©sentÃ©es en cours. C'est l'occasion, pour les Ã©tudiants, d'utiliser sur un cas pratique, les Ã©lÃ©ments exposÃ©es dans les UE. Travail effectuÃ© sous la direction pÃ©dagogique d'un enseignant, et donnant lieu Ã  la rÃ©daction d'un mÃ©moire et d'une soutenance orale.</resume>
+        <resume>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.</resume>
         <plan/>
         <lieu>&lum;,&jer;</lieu>
         <ref_intervenant ref="massat"/>
@@ -358,64 +358,64 @@
     <unite id="ENSINBU7">
         <nom>Projet</nom>
         <credit>6</credit>
-        <resume>Le but du projet est de mettre en oeuvre, de l'analyse Ã  la programmation, les notions prÃ©sentÃ©es en cours. C'est l'occasion, pour les Ã©tudiants, d'utiliser sur un cas pratique, les Ã©lÃ©ments exposÃ©es dans les UE. Travail effectuÃ© sous la direction pÃ©dagogique d'un enseignant, et donnant lieu Ã  la rÃ©daction d'un mÃ©moire et d'une soutenance orale.</resume>
+        <resume>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.</resume>
         <plan/>
         <lieu/>
         <ref_intervenant ref="morin"/>
     </unite>
     <unite id="ENSINBU8">
-        <nom>SÃ©mantique </nom>
+        <nom>Sémantique </nom>
         <credit>3</credit>
-        <resume>1-Le lambda-calcul simplement typÃ©
+        <resume>1-Le lambda-calcul simplement typé
             
-            Syntaxe, typage, beta et eta-conversions, Ã©quations. ModÃ¨les : interprÃ©tation des jugements de typage.
+            Syntaxe, typage, beta et eta-conversions, équations. Modèles : interprétation des jugements de typage.
             
-            2-Extension Ã  PCF. La rÃ¨gle \mu.
+            2-Extension à PCF. La règle \mu.
             
             3-Points fixes dans les ordres partiels complets.
             
-            Le thÃ©orÃ¨me de Tarski.
+            Le théorème de Tarski.
             
-            4-SÃ©mantique par point fixe de PCF.
+            4-Sémantique par point fixe de PCF.
             
-            5-Cours de clÃ´ture : survol des diffÃ©rentes approches sÃ©mantiques.
+            5-Cours de clôture : survol des différentes approches sémantiques.
             
-            SÃ©mantiques opÃ©rationnelles : par transitions, naturelles, machine abstraite de
+            Sémantiques opérationnelles : par transitions, naturelles, machine abstraite de
             
             Landin.
             
-            SÃ©mantique dÃ©notationnelles : cas fonctionnel(cf.chapitre 4) et cas d'un petit langage impÃ©ratif.</resume>
+            Sémantique dénotationnelles : cas fonctionnel(cf.chapitre 4) et cas d'un petit langage impératif.</resume>
         <plan/>
         <lieu>&jer;</lieu>
         <ref_intervenant ref="estellon"/>
     </unite>
     <unite id="ENSINBU9">
-        <nom>Algorithmique distribuÃ©e</nom>
+        <nom>Algorithmique distribuée</nom>
         <credit>3</credit>
-        <resume>Un systÃ¨me distribuÃ© est un ensemble dâ€™entitÃ©s autonomes de calcul (ordinateurs, PDA, processeurs, processus, processus lÃ©ger, ...) interconnectÃ©es et qui peuvent communiquer entre eux. Ce cours est une introduction aux mÃ©thodes pour la conception d'algorithmes dans de tels systÃ¨mes. Il donne une prÃ©sentation des diffÃ©rents types de systÃ¨mes distribuÃ©s et des diffÃ©rents problÃ¨mes que l'on doit rÃ©soudre. Les problÃ¨mes abordÃ©s sont : l'Ã©lection, le consensus, la diffusion, l'exploration, la rÃ©plication, l'exploration et le rendez-vous avec des agent mobiles.</resume>
+        <resume>Un système distribué est un ensemble d&#8217;entités autonomes de calcul (ordinateurs, PDA, processeurs, processus, processus léger, ...) interconnectées et qui peuvent communiquer entre eux. Ce cours est une introduction aux méthodes pour la conception d'algorithmes dans de tels systèmes. Il donne une présentation des différents types de systèmes distribués et des différents problèmes que l'on doit résoudre. Les problèmes abordés sont : l'élection, le consensus, la diffusion, l'exploration, la réplication, l'exploration et le rendez-vous avec des agent mobiles.</resume>
         <plan/>
         <lieu>&lum;</lieu>
         <ref_intervenant ref="morin"/>
     </unite>
     <unite id="ENSINBU10">
-        <nom> IntÃ©gration des systÃ¨mes d'information </nom>
+        <nom> Intégration des systèmes d'information </nom>
         <credit>3</credit>
         <resume>
-            ProblÃ©matique d'intÃ©gration des SI
-            Architectures et patrons d'intÃ©gration
-            SystÃ¨mes d'Information d'entreprises
-            SystÃ¨mes d'Information sur Internet
+            Problématique d'intégration des SI
+            Architectures et patrons d'intégration
+            Systèmes d'Information d'entreprises
+            Systèmes d'Information sur Internet
         </resume>
         <plan/>
         <lieu>&jer;</lieu>
         <ref_intervenant ref="creignou"/>
     </unite>
     <unite id="ENSINBU11">
-        <nom>Initiation Ã  la fouille de donnÃ©es et Ã  l'optimisation des SGBD</nom>
+        <nom>Initiation à la fouille de données et à l'optimisation des SGBD</nom>
         <credit>3</credit>
-        <resume>Actuellement, de plus en plus de donnÃ©es sont conservÃ©es sans Ãªtre rÃ©ellement exploitÃ©es. Elles reprÃ©sentent pourtant une source importante dâ€™information. La fouille de donnÃ©es peut-Ãªtre dÃ©finie comme le processus permettant dâ€™extraire de lâ€™information non triviale et non prÃ©alablement connue Ã  partir des donnÃ©es. Dans cet enseignement, nous nous focaliserons sur lâ€™extraction de corrÃ©lations entre les donnÃ©es (rÃ¨gle dâ€™association, DÃ©pendances Fonctionnelles...) et nous verrons des techniques de mesure de la qualitÃ© des donnÃ©es (dÃ©tection et correction dâ€™erreur).
+        <resume>Actuellement, de plus en plus de données sont conservées sans être réellement exploitées. Elles représentent pourtant une source importante d&#8217;information. La fouille de données peut-être définie comme le processus permettant d&#8217;extraire de l&#8217;information non triviale et non préalablement connue à partir des données. Dans cet enseignement, nous nous focaliserons sur l&#8217;extraction de corrélations entre les données (règle d&#8217;association, Dépendances Fonctionnelles...) et nous verrons des techniques de mesure de la qualité des données (détection et correction d&#8217;erreur).
             
-            Par ailleurs, nous passerons du cÃ´tÃ© obscur des SGBD en mettant Ã©vidence le lien existant entre les performances d'un SGBD et les choix d'implÃ©mentation des diffÃ©rents algorithmes utilisÃ©s (gestion de la concurrence, reprise sur panne, transaction...) ainsi que les diffÃ©rentes implÃ©mentations existantes des opÃ©rations de base des SGBD comme les jointures ou les tris accompagnÃ©s de leurs conditions d'utilisation.</resume>
+            Par ailleurs, nous passerons du côté obscur des SGBD en mettant évidence le lien existant entre les performances d'un SGBD et les choix d'implémentation des différents algorithmes utilisés (gestion de la concurrence, reprise sur panne, transaction...) ainsi que les différentes implémentations existantes des opérations de base des SGBD comme les jointures ou les tris accompagnés de leurs conditions d'utilisation.</resume>
         <plan/>
         <lieu>&lum;</lieu>
         <ref_intervenant ref="sabatier"/>
@@ -424,62 +424,62 @@
         <nom>Intelligence artificielle</nom>
         <credit>3</credit>
         <resume>
-            Introduction Ã  l'IA
-            ProblÃ¨mes d'espace d'Ã©tats et d'exploration
-            Logiques pour l'IA et dÃ©monstration automatique
-            ReprÃ©sentation de connaissances
+            Introduction à l'IA
+            Problèmes d'espace d'états et d'exploration
+            Logiques pour l'IA et démonstration automatique
+            Représentation de connaissances
             Actions, temps et planification
-            Programmation par contraintes et rÃ©seaux de contraintes
+            Programmation par contraintes et réseaux de contraintes
         </resume>
         <plan/>
         <lieu>&jer;</lieu>
         <ref_intervenant ref="olive"/>
     </unite>
     <unite id="ENSINBU13">
-        <nom>Algorithme Ã  performance garantie</nom>
+        <nom>Algorithme à performance garantie</nom>
         <credit>3</credit>
         <resume>
-            Algorithmes d'approximation de nature combinatoire pour les problÃ¨mes
+            Algorithmes d'approximation de nature combinatoire pour les problèmes
             
-            NP-complets suivants : Voyageur de Commerce, arbre de Steiner, ordonnancement de taches, clustering, p-centres, sac Ã  dos, bin packing, couverture d'ensemble, la plus courte sur-sÃ©quence commune ;
+            NP-complets suivants : Voyageur de Commerce, arbre de Steiner, ordonnancement de taches, clustering, p-centres, sac à dos, bin packing, couverture d'ensemble, la plus courte sur-séquence commune ;
             
-            FPTAS et PTAS (ordonnancement de taches et sac Ã  dos) ;
-            Algorithmes d'approximation par programmation linÃ©aire : l'arrondi et la mÃ©thode primale-duale (MAXSAT, couverture d'ensemble, multicoupes et multiflots dans les arbres) ;
-            Algorithmes en ligne et compÃ©titivitÃ© : la pagination et les k-serveurs.
+            FPTAS et PTAS (ordonnancement de taches et sac à dos) ;
+            Algorithmes d'approximation par programmation linéaire : l'arrondi et la méthode primale-duale (MAXSAT, couverture d'ensemble, multicoupes et multiflots dans les arbres) ;
+            Algorithmes en ligne et compétitivité : la pagination et les k-serveurs.
         </resume>
         <plan/>
         <lieu>&lum;</lieu>
         <ref_intervenant ref="jamet"/>
     </unite>
     <unite id="ENSINBU16">
-        <nom>Introduction Ã  l'apprentissage automatique</nom>
+        <nom>Introduction à l'apprentissage automatique</nom>
         <credit>3</credit>
-        <resume>nous sommes dÃ©solÃ©, mais nous n'avons pas encore de rÃ©sumÃ©.</resume>
+        <resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
         <plan/>
         <lieu>&lum;</lieu>
         <ref_intervenant ref="estellon"/>
     </unite>
     <unite id="ENSINCU60">
-        <nom>Architectures rÃ©parties - JEE</nom>
+        <nom>Architectures réparties - JEE</nom>
         <credit>6</credit>
-        <resume>Cette UE contient les concepts et outils de base pour le dÃ©veloppement de systÃ¨mes et d'applications distribuÃ©s sur le Web. Les architectures client serveur seront revisitÃ©es, et un focus particulier sera fait sur les servlets, JSP, EJB, J2EE etc.</resume>
+        <resume>Cette UE contient les concepts et outils de base pour le développement de systèmes et d'applications distribués sur le Web. Les architectures client serveur seront revisitées, et un focus particulier sera fait sur les servlets, JSP, EJB, J2EE etc.</resume>
         <plan/>
         <lieu>&jer;</lieu>
         <ref_intervenant/>
     </unite>
     <unite id="ENSINCU64">
-        <nom>DÃ©veloppement d'applications mobiles</nom>
+        <nom>Développement d'applications mobiles</nom>
         <credit>3</credit>
-        <resume>Ce cours est dÃ©diÃ© au dÃ©veloppement d'applications sur smartphones et tablettes dans un environnement Android. Lâ€™objectif visÃ© est le dÃ©veloppement dâ€™une application complÃ¨te et professionnelle Ã  lâ€™issue de ce cours.
+        <resume>Ce cours est dédié au développement d'applications sur smartphones et tablettes dans un environnement Android. L&#8217;objectif visé est le développement d&#8217;une application complète et professionnelle à l&#8217;issue de ce cours.
             
-            Les Ã©lÃ©ments suivants seront Ã©tudiÃ©s :
+            Les éléments suivants seront étudiés :
             
             Architecture et OS Android,
-            la conception dâ€™applications (Context, BroadcastReceiver, ContentProviders, â€¦,
-            lâ€™interface graphique (Views, Layouts, MVC, â€¦),
-            le systÃ¨me de ressources et le stockage de donnÃ©es,
+            la conception d&#8217;applications (Context, BroadcastReceiver, ContentProviders, &#8230;,
+            l&#8217;interface graphique (Views, Layouts, MVC, &#8230;),
+            le système de ressources et le stockage de données,
             les librairies,
-            les applications connectÃ©es (Client http Android, HttpURLConnection , Google Cloud Messaging,â€¦).
+            les applications connectées (Client http Android, HttpURLConnection , Google Cloud Messaging,&#8230;).
         </resume>
         <plan/>
         <lieu>&jer;</lieu>
@@ -488,7 +488,7 @@
     <unite id="ENSINCU65">
         <nom>Gestion de projet</nom>
         <credit>3</credit>
-        <resume>Cette UE vise Ã  inculquer un mode de fonctionnement projet. Les aspects techniques (dÃ©lais, jalons, indicateurs, etc.) et humains (communication, gestion ds conflits, etc) seront abordÃ©s.</resume>
+        <resume>Cette UE vise à inculquer un mode de fonctionnement projet. Les aspects techniques (délais, jalons, indicateurs, etc.) et humains (communication, gestion ds conflits, etc) seront abordés.</resume>
         <plan/>
         <lieu/>
         <ref_intervenant/>
@@ -496,12 +496,12 @@
     <unite id="ENSINCU68">
         <nom>Cloud computing</nom>
         <credit>3</credit>
-        <resume>Lâ€™objectif de ce cours et dâ€™apprendre Ã  crÃ©er et dÃ©ployer des applications Cloud. Le cours couvre les aspects suivants :
+        <resume>L&#8217;objectif de ce cours et d&#8217;apprendre à créer et déployer des applications Cloud. Le cours couvre les aspects suivants :
             
-            DÃ©finition et types de cloud : cloud privÃ©, public, hybride
-            Concepts et services cloud : SaaS, PaaS, IaaS, â€¦
-            Risques et opportunitÃ©s du cloud : gestion de la sÃ©curitÃ© (donnÃ©es sensibles), accÃ¨s instantanÃ©s Ã  des ressources de calcul et de stockage (Ã©lasticitÃ©),
-            CrÃ©ation et dÃ©ploiement dâ€™applications : Google Cloud, Amazon, Azure, â€¦.
+            Définition et types de cloud : cloud privé, public, hybride
+            Concepts et services cloud : SaaS, PaaS, IaaS, &#8230;
+            Risques et opportunités du cloud : gestion de la sécurité (données sensibles), accès instantanés à des ressources de calcul et de stockage (élasticité),
+            Création et déploiement d&#8217;applications : Google Cloud, Amazon, Azure, &#8230;.
         </resume>
         <plan/>
         <lieu>&jer;</lieu>
@@ -510,7 +510,7 @@
     <unite id="ENSINCU74">
         <nom> Introduction au Big Data</nom>
         <credit>3</credit>
-        <resume>nous sommes dÃ©solÃ©, mais nous n'avons pas encore de rÃ©sumÃ©.</resume>
+        <resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
         <plan/>
         <lieu>&jer;</lieu>
         <ref_intervenant/>
@@ -518,7 +518,7 @@
     <unite id="ENSINCU75">
         <nom>Business process</nom>
         <credit>3</credit>
-        <resume>nous sommes dÃ©solÃ©, mais nous n'avons pas encore de rÃ©sumÃ©.</resume>
+        <resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
         <plan/>
         <lieu>&jer;</lieu>
         <ref_intervenant/>
@@ -526,7 +526,7 @@
     <unite id="ENSISCU28">
         <nom>RI8 : Web services</nom>
         <credit/>
-        <resume>nous sommes dÃ©solÃ©, mais nous n'avons pas encore de rÃ©sumÃ©.</resume>
+        <resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
         <plan/>
         <lieu>&jer;</lieu>
         <ref_intervenant/>
@@ -534,7 +534,7 @@
     <unite id="ENSINCU27">
         <nom>Anglais 2</nom>
         <credit>3</credit>
-        <resume>Expression orale et Ã©crite : exposÃ©s sur des sujets scientifiques et / ou professionnels, travaux Ã©crits. PrÃ©paration et passage du TOEIC.</resume>
+        <resume>Expression orale et écrite : exposés sur des sujets scientifiques et / ou professionnels, travaux écrits. Préparation et passage du TOEIC.</resume>
         <plan/>
         <lieu>&jer;</lieu>
         <ref_intervenant/>
@@ -542,15 +542,15 @@
     <unite id="ENSINCU28">
         <nom>Communication 2</nom>
         <credit>3</credit>
-        <resume>Lâ€™Ã©tudiant apprend Ã  effectuer un bilan de son parcours de formation, Ã  Ã©laborer un projet professionnel personnel, Ã  cerner ses motivations et Ã  enrichir ses connaissances des mÃ©tiers et du marchÃ© de lâ€™informatique pour se constituer un portefeuille de compÃ©tences.
+        <resume>L&#8217;étudiant apprend à effectuer un bilan de son parcours de formation, à élaborer un projet professionnel personnel, à cerner ses motivations et à enrichir ses connaissances des métiers et du marché de l&#8217;informatique pour se constituer un portefeuille de compétences.
             
             Valorisation du parcours de formation
             Clarification des motivations et de leurs incidences sur des choix professionnels
-            Identification des aptitudes et des compÃ©tences,
+            Identification des aptitudes et des compétences,
             Positionnement du projet personnel et professionnel
             Ajustement des profils annonce / candidature
-            PrÃ©paration aux entretiens de recrutement
-            RÃ©daction de curriculum vitae et de lettres de motivation
+            Préparation aux entretiens de recrutement
+            Rédaction de curriculum vitae et de lettres de motivation
         </resume>
         <plan/>
         <lieu>&jer;</lieu>
@@ -559,7 +559,7 @@
     <unite id="ENSINDU3">
         <nom>Projet industriel de mise en application</nom>
         <credit>6</credit>
-        <resume>RÃ©daction du cahier des charges. Conception de l'application. DÃ©veloppement et test. RÃ©daction d'un mÃ©moire et prÃ©sentation.</resume>
+        <resume>Rédaction du cahier des charges. Conception de l'application. Développement et test. Rédaction d'un mémoire et présentation.</resume>
         <plan/>
         <lieu>&jer;</lieu>
         <ref_intervenant/>
@@ -567,7 +567,7 @@
     <unite id="ENSINDU4">
         <nom>Stage en entreprise</nom>
         <credit>24</credit>
-        <resume>Recherche d'un stage. Validation du sujet de stage. Suivi du bon dÃ©roulement du stage. Aide Ã  la rÃ©daction du mÃ©moire de stage. Soutenance et Ã©valuation du stage.</resume>
+        <resume>Recherche d'un stage. Validation du sujet de stage. Suivi du bon déroulement du stage. Aide à la rédaction du mémoire de stage. Soutenance et évaluation du stage.</resume>
         <plan/>
         <lieu>&jer;</lieu>
         <ref_intervenant/>

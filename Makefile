@@ -1,15 +1,15 @@
+all : dtd web tidy
 
 dtd:
 	xmllint --valid --noout master.xml
 
 web:
-
-	xsltproc -o www/master.html xsl/master.xsl master.xml
+	mkdir -p www
+	xsltproc -o www/index.html xsl/master.xsl master.xml
 
 tidy:
 
-	find -name "*.html" -exec tidy -i -m -asxhtml -latin1 "error.txt" {} \;
-
+	find -name "*.html" -exec tidy -i -q -m -asxhtml {} \;
 
 clean:
 	rm -r www/
