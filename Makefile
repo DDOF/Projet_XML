@@ -8,7 +8,7 @@ web:
 
 tidy:
 
-	find -name "*.html" -exec tidy -m -e -q -latin1 {} \;
+	find -name "*.html" -exec tidy -i -m -asxhtml -latin1 "error.txt" {} \;
 
 
 clean:
