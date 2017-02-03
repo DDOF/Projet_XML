@@ -10,7 +10,7 @@
 			</body></html>
 			<xsl:for-each select="//parcours">
 
-				<xsl:document href="parcours/{nom}.html">
+				<xsl:document href="parcours/{@id}.html">
 					<xsl:call-template name="menu">
 						<xsl:with-param name="sub" select="'../'" />
 					</xsl:call-template>
@@ -39,7 +39,7 @@
 
 		<xsl:for-each select="//intervenant">
 
-			<xsl:document href="int/{nom}.html">
+			<xsl:document href="int/{@id}.html">
 				<xsl:call-template name="menu">
 					<xsl:with-param name="sub" select="'../'" />
 				</xsl:call-template>
@@ -80,21 +80,23 @@
 		<div><xsl:attribute name="id"><xsl:value-of select="@id" />
 	</xsl:attribute>
 	<h2><xsl:value-of select="nom" /></h2></div>
-	<xsl:value-of select="credit" />
-	<xsl:apply-templates select="resume"/>
-	<a><xsl:attribute name="href">../intervenants.html#<xsl:value-of select="ref_intervenant/@ref" />
+	<li> Credit : <xsl:value-of select="credit" /></li>
+	<li> Description : <xsl:apply-templates select="resume"/></li>
+	<xsl:variable name="ref" select="ref_intervenant"/>
+	<li> Responsable : <a><xsl:attribute name="href">../intervenants.html#<xsl:value-of select="ref_intervenant" />
 </xsl:attribute>
-<xsl:value-of select="ref_intervenant/@ref" /></a>
+
+<xsl:value-of select="../intervenant[@id=$ref]/nom" /></a></li>
 <xsl:variable name="id" select="@id"/>
 
 <ul>
-	<xsl:for-each select="//parcours//ref_unite">
-		<xsl:if test="@ref = $id">
-			<li><a><xsl:attribute name="href">../parcours/<xsl:value-of select="//parcours/nom" />.html
+	<p> Cet UE figure dans les parcours suivants :</p>
+	<xsl:for-each select="//ref_unite[@ref = $id]">
+
+			<li><a><xsl:attribute name="href">../parcours/<xsl:value-of select="../../../@id" />.html
 		</xsl:attribute>
-		<xsl:value-of select="//parcours/nom"/>
+		<xsl:value-of select="../../../nom"/>
 	</a></li>
-</xsl:if>
 </xsl:for-each>
 </ul>
 </xsl:document>
@@ -133,10 +135,12 @@
 <li>
 	<xsl:apply-templates select="resume"/>
 </li>
-<li><a><xsl:attribute name="href">intervenants.html#<xsl:value-of select="ref_intervenant/@ref" />
+<xsl:variable name="ref" select="ref_intervenant"/>
+<li> Responsable : <a><xsl:attribute name="href">int/<xsl:value-of select="ref_intervenant" />.html
 </xsl:attribute>
-<xsl:value-of select="ref_intervenant/@ref" /></a>
-</li></ul>
+
+<xsl:value-of select="../intervenant[@id=$ref]/nom" /></a></li>
+</ul>
 </xsl:for-each>
 
 </xsl:template>
@@ -147,7 +151,7 @@
 	<xsl:for-each select="//intervenant"><ul>
 		<xsl:attribute name="id"><xsl:value-of select="@id" />
 	</xsl:attribute><li>
-	<a><xsl:attribute name="href">int/<xsl:value-of select="nom" />.html</xsl:attribute><xsl:value-of select="nom" /></a>
+	<a><xsl:attribute name="href">int/<xsl:value-of select="@id" />.html</xsl:attribute><xsl:value-of select="nom" /></a>
 </li>
 
 <li>
@@ -160,7 +164,7 @@
 <xsl:template name="menu">
 	<xsl:param name="sub"   />
 	<ul>
-		<li><a href="{$sub}master.html"> Index</a></li>
+		<li><a href="{$sub}index.html"> Index</a></li>
 		<li><a href="{$sub}intervenants.html"> Intervenants</a></li>
 		<li><a href="{$sub}unites.html"> Unites</a></li>
 
@@ -180,5 +184,10 @@
 	<strong>
 		<xsl:value-of select="."/>
 	</strong>
+</xsl:template>
+<xsl:template match="list">
+	<li>
+		<xsl:value-of select="."/>
+	</li>
 </xsl:template>
 </xsl:stylesheet>

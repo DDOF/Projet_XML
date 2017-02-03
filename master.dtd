@@ -25,11 +25,11 @@
 <!ELEMENT ref_intervenant     (#PCDATA)>
 <!ATTLIST ref_intervenant
      ref IDREF #IMPLIED>
-<!ELEMENT intervenant    (nom,web,mail)>
+<!ELEMENT intervenant    (nom,mail)>
 <!ATTLIST intervenant
      id ID #REQUIRED>
 
-<!ELEMENT web     (#PCDATA)>
+
 <!ELEMENT mail     (#PCDATA)>
 <!ELEMENT parcours     (responsable+,nom,description,débouchés+,semestre+)>
 <!ATTLIST parcours id ID #IMPLIED >

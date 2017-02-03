@@ -84,52 +84,52 @@
     </parcours>
     <intervenant id="massat">
         <nom>Jean-Luc MASSAT</nom>
-        <web/>
+        
         <mail>jean-luc.massat@univ-amu.fr</mail>
     </intervenant>
     <intervenant id="olive">
         <nom>Frederic OLIVE</nom>
-        <web/>
+        
         <mail>frederic.olive@univ-amu.fr</mail>
     </intervenant>
     <intervenant id="godard">
         <nom>Emmanuel GODARD</nom>
-        <web/>
+        
         <mail>emmanuel.godard@univ-amu.fr</mail>
     </intervenant>
     <intervenant id="morin">
         <nom>Remi MORIN</nom>
-        <web/>
+        
         <mail>remi.morin@univ-amu.fr</mail>
     </intervenant>
     <intervenant id="sabatier">
         <nom>laude SABATIER</nom>
-        <web/>
+        
         <mail>claude.sabatier@univ-amu.fr</mail>
     </intervenant>
     <intervenant id="broche">
         <nom>Martine BROCHE</nom>
-        <web/>
+        
         <mail>martine.broche@univ-amu.fr</mail>
     </intervenant>
     <intervenant id="jamet">
         <nom>Line JAMET</nom>
-        <web/>
+        
         <mail>line.jakubiec@univ-amu.fr</mail>
     </intervenant>
     <intervenant id="estellon">
         <nom>Bertrand ESTELLON</nom>
-        <web/>
+        
         <mail>bertrand.estellon@univ-amu.fr</mail>
     </intervenant>
     <intervenant id="novelli">
         <nom>Noel NOVELLI</nom>
-        <web/>
+        
         <mail>noel.novelli@univ-amu.fr</mail>
     </intervenant>
     <intervenant id="creignou">
         <nom>Nadia CREIGNOU</nom>
-        <web/>
+        
         <mail>nadia.creignou@univ-amu.fr</mail>
     </intervenant>
     <unite id="ENSINAU1">

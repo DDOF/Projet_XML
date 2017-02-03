@@ -13,3 +13,10 @@ tidy:
 
 clean:
 	rm -r www/
+
+parse: 
+	xsltproc -o data.xml xsl/parser.xsl data/donnees-master.xml
+	tidy -i -q -m -xml data.xml
+	xsltproc -o www/index.html xsl/master.xsl data.xml
+	find -name "*.html" -exec tidy -i -q -m -asxhtml {} \;
+
