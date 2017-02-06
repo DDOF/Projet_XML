@@ -1,4 +1,5 @@
-all : dtd web tidy
+.PHONY: java clean all
+all : dtd web tidy java
 
 dtd:
 	#Parse les données du master et validation avec notre dtd
@@ -14,9 +15,9 @@ web:
 
 tidy:
 
-	find -name "*.html" -exec tidy -i -q -m -asxhtml -utf8 {} \;
-
+	find -name "*.html" -exec tidy --show-warnings no -i -q -m -asxhtml -utf8 {} \;
 clean:
 	rm -r www/
 
-
+java:
+	java -classpath "java/" Unites

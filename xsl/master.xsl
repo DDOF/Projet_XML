@@ -117,6 +117,15 @@
 		</body>
 	</html>
 </xsl:document>
+<xsl:document href="parcours.html">
+	<xsl:call-template name="menu"/>
+	<html>
+		<head><title>Parcours</title></head>
+		<body>
+			<xsl:call-template name="liste-des-Parcours" />
+		</body>
+	</html>
+</xsl:document>
 <xsl:document href="unites.html">
 	<xsl:call-template name="menu"/>
 	<html>
@@ -139,7 +148,7 @@
 	<a><xsl:attribute name="href">unites/<xsl:value-of select="@id" />.html</xsl:attribute><xsl:value-of select="nom" /> </a>
 
 </li>
-<li><xsl:value-of select="credit" /></li>
+<li>Crédit : <xsl:value-of select="credit" /></li>
 <li>
 	<xsl:apply-templates select="resume"/>
 </li>
@@ -169,6 +178,18 @@
 </xsl:for-each>
 
 </xsl:template>	
+<xsl:template name="liste-des-Parcours">
+	<h1> Liste des Parcours</h1>
+	<xsl:for-each select="//parcours"><ul>
+		<xsl:attribute name="id"><xsl:value-of select="@id" />
+	</xsl:attribute><li>
+	<a><xsl:attribute name="href">parcours/<xsl:value-of select="@id" />.html</xsl:attribute><xsl:value-of select="nom" /></a>
+</li>
+
+</ul>
+</xsl:for-each>
+
+</xsl:template>	
 <xsl:template name="menu">
 		<xsl:param name="sub" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
@@ -178,9 +199,10 @@
 
 	<link rel="stylesheet" type="text/css" href="{$sub}css/monStyle.css"/>
 	<ul id="menu">
-		<li><a href="{$sub}index.html"> Index</a></li>
-		<li><a href="{$sub}intervenants.html"> Intervenants</a></li>
-		<li><a href="{$sub}unites.html"> Unites</a></li>
+		<li><a href="{$sub}index.html">Index</a></li>
+		<li><a href="{$sub}intervenants.html">Intervenants</a></li>
+		<li><a href="{$sub}unites.html">Unites</a></li>
+		<li><a href="{$sub}parcours.html">Parcours</a></li>
 
 	</ul>
 
