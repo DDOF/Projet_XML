@@ -1,22 +1,22 @@
 all : dtd web tidy
 
 dtd:
-	xmllint --valid --noout master.xml
+	#Parse les données du master et validation avec notre dtd
+	xsltproc -o data.xml xsl/parser.xsl data/donnees-master.xml
+	tidy -i -q -m -xml data.xml
+	xmllint --valid --noout data.xml
 
 web:
 	mkdir -p www
-	xsltproc -o www/index.html xsl/master.xsl master.xml
+	mkdir -p www/css/
+	cp monStyle.css www/css
+	xsltproc -o www/index.html xsl/master.xsl data.xml
 
 tidy:
 
-	find -name "*.html" -exec tidy -i -q -m -asxhtml {} \;
+	find -name "*.html" -exec tidy -i -q -m -asxhtml -utf8 {} \;
 
 clean:
 	rm -r www/
 
-parse: 
-	xsltproc -o data.xml xsl/parser.xsl data/donnees-master.xml
-	tidy -i -q -m -xml data.xml
-	xsltproc -o www/index.html xsl/master.xsl data.xml
-	find -name "*.html" -exec tidy -i -q -m -asxhtml {} \;
 

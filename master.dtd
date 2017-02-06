@@ -36,9 +36,9 @@
 <!ELEMENT responsable     (#PCDATA)>
 <!ELEMENT description     %riches;>
 <!ELEMENT débouchés %riches;>
-<!ELEMENT semestre     (role+)>
-<!ATTLIST semestre numero (S1 | S2 | S3 | S4) "S1" >
-<!ELEMENT role     (ref_unite+)>
+<!ELEMENT semestre     (role)*>
+<!ATTLIST semestre numero	CDATA #IMPLIED >
+<!ELEMENT role     (ref_unite)*>
 <!ATTLIST role type (obligatoires|options) "obligatoires">
 <!ELEMENT ref_unite     (#PCDATA)>
 <!ATTLIST ref_unite

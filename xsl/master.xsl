@@ -4,9 +4,13 @@
 	<xsl:output method="html" encoding="iso-8859-1" indent="yes" doctype-system="master.dtd"/>
 	<xsl:template match="/">
 		<html>
-			<head><title>Index</title></head>
+			<head><title>Index</title>
+
+		</head>
 			<body>
+				
 				<xsl:call-template name="menu"/>
+
 			</body></html>
 			<xsl:for-each select="//parcours">
 
@@ -15,8 +19,10 @@
 						<xsl:with-param name="sub" select="'../'" />
 					</xsl:call-template>
 					<h2><xsl:value-of select="nom" /></h2>
+					
+					<xsl:value-of select="responsable" />
 					<xsl:apply-templates select="description"/>
-
+					<xsl:apply-templates select="débouchés"/>
 					<ul><xsl:for-each select="semestre">
 						<li><xsl:value-of select="@numero" /></li>
 						<ul>
@@ -116,7 +122,9 @@
 	<html>
 		<head><title>Unites</title></head>
 		<body>
+			<div id="contenu">
 			<xsl:call-template name="liste-des-unites" />
+			</div>
 		</body>
 	</html>
 </xsl:document>
@@ -162,13 +170,20 @@
 
 </xsl:template>	
 <xsl:template name="menu">
-	<xsl:param name="sub"   />
-	<ul>
+		<xsl:param name="sub" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+	<div id="entete">
+		<h2> Master Informatique de Marseille</h2>
+	</div>
+
+	<link rel="stylesheet" type="text/css" href="{$sub}css/monStyle.css"/>
+	<ul id="menu">
 		<li><a href="{$sub}index.html"> Index</a></li>
 		<li><a href="{$sub}intervenants.html"> Intervenants</a></li>
 		<li><a href="{$sub}unites.html"> Unites</a></li>
 
 	</ul>
+
 </xsl:template>
 <xsl:template match="i">
 	<i>

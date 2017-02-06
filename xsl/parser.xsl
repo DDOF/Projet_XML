@@ -18,8 +18,8 @@
                   <xsl:value-of select="../objet[@type = 'personne'and @id=$ref]/info[@nom='nom']/@value" />
                </responsable>
                <nom><xsl:value-of select="info[@nom='nom']/@value"/></nom>
-               <description></description>
-               <débouchés></débouchés>
+               <description><par><xsl:value-of select="info[@nom='competences']"/></par></description>
+               <débouchés><par><xsl:value-of select="info[@nom='objectifs']"/></par></débouchés>
                
                   <xsl:call-template name="semestre"/>
                
@@ -56,7 +56,7 @@
          <xsl:variable name="id-sem" select="@value"/>
          <xsl:attribute name="numero"><xsl:value-of select="../../objet[@type='semestre' and @id=$id-sem]/info[@nom='nom']/@value" />
          </xsl:attribute>
-                     <xsl:value-of select="$id-sem"/>
+                  
          <role type="obligatoires">
          
 
