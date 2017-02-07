@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  elementFormDefault="qualified">
+  <xs:element name="master">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="parcours" maxOccurs="unbounded"/>
+        <xs:element ref="intervenant" maxOccurs="unbounded"/>
+        <xs:element ref="unite" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tab">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tr" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="th" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="th" type="xs:string"/>
+  <xs:element name="list">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="li" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="li">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="par" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="par">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="bold"/>
+        <xs:element ref="i"/>
+        <xs:element ref="a"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bold" type="xs:string"/>
+  <xs:element name="i" type="xs:string"/>
+  <xs:element name="a" type="xs:string"/>
+  <xs:element name="unite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nom"/>
+        <xs:element ref="credit"/>
+        <xs:element ref="resume"/>
+        <xs:element ref="plan"/>
+        <xs:element ref="lieu"/>
+        <xs:element ref="ref_intervenant"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nom" type="xs:string"/>
+  <xs:element name="id" type="xs:string"/>
+  <xs:element name="credit" type="xs:string"/>
+  <xs:element name="resume">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="par"/>
+        <xs:element ref="list"/>
+        <xs:element ref="tab"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="plan" type="xs:string"/>
+  <xs:element name="lieu" type="xs:string"/>
+  <xs:element name="ref_intervenant">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="ref" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="intervenant">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nom"/>
+        <xs:element ref="mail"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mail" type="xs:string"/>
+  <xs:element name="parcours">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="responsable" maxOccurs="unbounded"/>
+        <xs:element ref="nom"/>
+        <xs:element ref="description"/>
+        <xs:element ref="débouchés"/>
+        <xs:element ref="semestre" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="responsable" type="xs:string"/>
+  <xs:element name="description">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="par"/>
+        <xs:element ref="list"/>
+        <xs:element ref="tab"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="débouchés">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="par"/>
+        <xs:element ref="list"/>
+        <xs:element ref="tab"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="semestre">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="role"/>
+      </xs:sequence>
+      <xs:attribute name="numero" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="role">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ref_unite"/>
+      </xs:sequence>
+      <xs:attribute name="type" default="obligatoires">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="obligatoires"/>
+            <xs:enumeration value="options"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ref_unite">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="ref" type="xs:string" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

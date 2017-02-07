@@ -1,5 +1,5 @@
 .PHONY: java clean all
-all : dtd web tidy java
+all : dtd xsd web tidy
 
 dtd:
 	#Parse les données du master et validation avec notre dtd
@@ -7,6 +7,8 @@ dtd:
 	tidy -i -q -m -xml data.xml
 	xmllint --valid --noout data.xml
 
+xsd: 
+	xmllint --noout --schema master.xsd data.xml
 web:
 	mkdir -p www
 	mkdir -p www/css/
