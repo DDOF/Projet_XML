@@ -21,7 +21,7 @@ public class Unites {
 
      DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
      DocumentBuilder builder = factory.newDocumentBuilder();    
-     Document document= builder.parse(new File("data.xml"));
+     Document document= builder.parse(new File("master.xml"));
      Element root = document.getDocumentElement();
 
      NodeList racineNoeuds = root.getChildNodes();
