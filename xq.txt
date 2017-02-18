@@ -1,0 +1,51 @@
+
+
+declare option saxon:output "method=xml";
+declare option saxon:output "doctype-public=-//W3C//DTD XHTML 1.0 Strict//EN";
+declare option saxon:output "doctype-system=http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd";
+declare option saxon:output "omit-xml-declaration=no";
+declare option saxon:output "indent=yes";
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/monStyle.css" />
+    <title>Résultat XQuery</title>
+  </head>
+  <body>
+    <h1>Using XQuery</h1>
+      <table cellspacing="0" cellpadding="5">
+        <tr class="th">
+          <th>nom</th>
+          <th>liste des enseignements</th>
+          <th>Parcours</th>
+        </tr>
+
+  {for $a at $b in master/intervenant 
+    order by $a/nom
+    return
+        <tr >
+          <td> {$a/nom/data(.)}</td>
+          <td><table id="sous"><tr><td>{
+          		for $c in master/unite where $c/ref_intervenant = $a/@id return
+          	   <li>
+                {$c/nom/data(.)}
+               </li>
+            }
+          	</td></tr></table></td>
+           <td>
+              {
+              for $c in master/unite where $c/ref_intervenant = $a/@id return
+              <table id="sous"><tr><td>{
+              for $d in master/parcours where $d//ref_unite/@ref = $c/@id return
+
+               <li>
+                {$d/nom/data(.)}
+               </li>
+            }</td></tr></table>
+            }
+           </td>
+        </tr>}
+    </table>
+  </body>
+</html>
