@@ -9,6 +9,10 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="objet" type="xs:anyType" abstract="true">
+
+  </xs:element>
+
   <xs:element name="tab">
     <xs:complexType>
       <xs:sequence>
@@ -50,8 +54,8 @@
   <xs:element name="bold" type="xs:string"/>
   <xs:element name="i" type="xs:string"/>
   <xs:element name="a" type="xs:string"/>
-  <xs:element name="unite">
-    <xs:complexType>
+  <xs:element name="unite" type="unite" substitutionGroup="objet"/>  
+   <xs:complexType name="unite" >
       <xs:sequence>
         <xs:element ref="nom"/>
         <xs:element ref="credit"/>
@@ -59,10 +63,28 @@
         <xs:element ref="plan"/>
         <xs:element ref="lieu"/>
         <xs:element ref="ref_intervenant"/>
+        <xs:any minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="id" type="xs:string" use="required"/>
     </xs:complexType>
-  </xs:element>
+   <xs:complexType name="unite-luminy">
+   <xs:complexContent>
+      <xs:restriction base="unite">
+         <xs:sequence>
+           <xs:element name="lieu" type="xs:string" fixed="Luminy"/>
+         </xs:sequence>
+      </xs:restriction>
+   </xs:complexContent>
+</xs:complexType>  
+<xs:complexType name="unite-stJerome">
+   <xs:complexContent>
+      <xs:restriction base="unite" >
+         <xs:sequence>
+           <xs:element name="lieu" type="xs:string" fixed="St-Jerome"/>
+         </xs:sequence>
+      </xs:restriction>
+   </xs:complexContent>
+</xs:complexType>  
   <xs:element name="nom" type="xs:string"/>
   <xs:element name="id" type="xs:string"/>
   <xs:element name="credit" type="xs:string"/>
@@ -86,17 +108,27 @@
       </xs:simpleContent>
     </xs:complexType>
   </xs:element>
-  <xs:element name="intervenant">
-    <xs:complexType>
+  <xs:element name="intervenant" type="intervenant" substitutionGroup="objet"/> 
+    <xs:complexType name="intervenant">
       <xs:sequence>
         <xs:element ref="nom"/>
         <xs:element ref="mail"/>
+        <xs:any minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="id" type="xs:string" use="required"/>
     </xs:complexType>
-  </xs:element>
+  <xs:complexType name="personne">
+   <xs:complexContent>
+      <xs:extension base="intervenant">
+         <xs:sequence>
+           <xs:element name="adresse" type="xs:string"/>
+           <xs:any minOccurs="0"/>
+         </xs:sequence>
+      </xs:extension>
+   </xs:complexContent>
+</xs:complexType>
   <xs:element name="mail" type="xs:string"/>
-  <xs:element name="parcours">
+  <xs:element name="parcours" substitutionGroup="objet">
     <xs:complexType>
       <xs:sequence>
         <xs:element ref="responsable" maxOccurs="unbounded"/>

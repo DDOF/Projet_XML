@@ -10,7 +10,7 @@
 		<body>
 			
 			<xsl:call-template name="menu"/>
-
+			<p>Site web du master informatique</p>
 		</body></html>
 		<xsl:for-each select="//parcours">
 
